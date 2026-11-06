@@ -1,0 +1,15 @@
+Entity, Controller, Service, Repository
+
+- Học cách tạo api
+ + Get users
+ + Thêm users
+
+ - Việc cần làm
+  + Tạo AccountEntity (id, username, password) - Mật khẩu không lưu trong database, phải được lưu dưới dạng mã hóa
+  + Viết api đăng ký tài khoản
+  + Viết api login với username và password
+  + Đưa code lên git với repository mới
+  + Commit từng chức năng
+
+Lưu ý:
+Chỉ dùng AI để research, không được cho nó tạo code
