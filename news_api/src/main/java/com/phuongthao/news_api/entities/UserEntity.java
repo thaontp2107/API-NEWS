@@ -13,6 +13,19 @@ public class UserEntity {
     private String name;
 
     @Column
+    private String gioiTinh;
+
+    @Enumerated(EnumType.STRING)
+    @Column
+    private UserRole role = UserRole.READER;
+
+    @Column
+    private String sdt;
+
+    @Column
+    private String email;
+
+    @Column
     private String address;
 
     public Long getId() {
@@ -37,5 +50,30 @@ public class UserEntity {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getSdt() {
+        return sdt;
+    }
+
+    public void setSdt(String sdt) {
+        this.sdt = sdt;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
+    public UserRole getRole() {
+        return role;
+    }
+
+    public void setRole(UserRole role) {
+        this.role = role;
     }
 }
