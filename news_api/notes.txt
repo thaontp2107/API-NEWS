@@ -17,3 +17,21 @@ Entity, Controller, Service, Repository
 
 Lưu ý:
 Chỉ dùng AI để research, không được cho nó tạo code
+
+
+ Annotation	          Chức năng
+@RestController   	Đánh dấu REST Controller
+@RequestMapping	    Khai báo đường dẫn chung
+@GetMapping	        Xử lý HTTP GET
+@PostMapping	    Xử lý HTTP POST
+@PutMapping	        Xử lý HTTP PUT
+@DeleteMapping	    Xử lý HTTP DELETE
+@RequestBody	    Nhận dữ liệu từ JSON request
+@PathVariable       Lấy dữ liệu từ đường dẫn.
+@RequestParam	    Lấy tham số từ query string
+
+
+Entity: Biểu diễn dữ liệu tài khoản.
+Repository: Lưu và truy vấn dữ liệu.
+Service: Xử lý nghiệp vụ, bao gồm mã hóa mật khẩu.
+Controller: Tiếp nhận request và trả response.
