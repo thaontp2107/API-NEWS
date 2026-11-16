@@ -15,7 +15,6 @@ public class  UserService {
         this.userRepository = userRepository;
     }
 
-<<<<<<< HEAD
     public UserEntity getUserById(Long id){
         return userRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("User not found"));
@@ -42,8 +41,6 @@ public class  UserService {
         return userRepository.save(existingUser);
     }
 
-=======
->>>>>>> feature/entities
     public List<UserEntity> getAllUsers(){
         return userRepository.findAll();
     }
