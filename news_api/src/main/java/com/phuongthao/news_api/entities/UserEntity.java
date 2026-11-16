@@ -76,4 +76,12 @@ public class UserEntity {
     public void setRole(UserRole role) {
         this.role = role;
     }
+
+    public String getGioiTinh() {
+        return gioiTinh;
+    }
+
+    public void setGioiTinh(String gioiTinh) {
+        this.gioiTinh = gioiTinh;
+    }
 }
