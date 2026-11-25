@@ -34,4 +34,12 @@ Chỉ dùng AI để research, không được cho nó tạo code
 Entity: Biểu diễn dữ liệu tài khoản.
 Repository: Lưu và truy vấn dữ liệu.
 Service: Xử lý nghiệp vụ, bao gồm mã hóa mật khẩu.
-Controller: Tiếp nhận request và trả response.
+Controller: Tiếp nhận request và trả response dạng Json.
+
+- get: lấy danh sách người dùng
+- get @GetMapping("/{id}") : lấy người dùng theo id
+- post:  thêm người dùng
+- put: cập nhật người dùng
+- delete: xóa nguời dùng
+-@PathVariable Long id: Lấy ID từ URL.
+- @RequestBody : Nhận thông tin mới từ JSON trong Body.

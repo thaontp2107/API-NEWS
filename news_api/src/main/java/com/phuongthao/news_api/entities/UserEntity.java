@@ -52,14 +52,6 @@ public class UserEntity {
         this.address = address;
     }
 
-    public String getSdt() {
-        return sdt;
-    }
-
-    public void setSdt(String sdt) {
-        this.sdt = sdt;
-    }
-
     public String getEmail() {
         return email;
     }
@@ -83,5 +75,14 @@ public class UserEntity {
 
     public void setGioiTinh(String gioiTinh) {
         this.gioiTinh = gioiTinh;
+    }
+
+
+    public String getSdt() {
+        return sdt;
+    }
+
+    public void setSdt(String sdt) {
+        this.sdt = sdt;
     }
 }

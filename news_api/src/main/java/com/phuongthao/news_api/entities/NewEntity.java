@@ -17,7 +17,6 @@ public class NewEntity {
     @Column
     private String tieuDe;
 
-
     @Column(columnDefinition = "LONGTEXT")
     private String noiDung;
 
@@ -33,8 +32,9 @@ public class NewEntity {
     @Column
     private LocalDateTime ngayCapNhat = LocalDateTime.now();
 
+    @Enumerated(EnumType.STRING)
     @Column
-    private String trangThai;
+    private NewsStatus trangThai;
 
     @Column
     private Long luotXem = 0L;
@@ -93,5 +93,46 @@ public class NewEntity {
 
     public void setNgayDang(LocalDateTime ngayDang) {
         this.ngayDang = ngayDang;
+    }
+
+    public CategoryEntity getCategory() {
+        return category;
+    }
+
+    public void setCategory(CategoryEntity category) {
+        this.category = category;
+    }
+
+
+    public LocalDateTime getNgayCapNhat() {
+        return ngayCapNhat;
+    }
+
+    public void setNgayCapNhat(LocalDateTime ngayCapNhat) {
+        this.ngayCapNhat = ngayCapNhat;
+    }
+
+    public NewsStatus getTrangThai() {
+        return trangThai;
+    }
+
+    public void setTrangThai(NewsStatus trangThai) {
+        this.trangThai = trangThai;
+    }
+
+    public Long getLuotXem() {
+        return luotXem;
+    }
+
+    public void setLuotXem(Long luotXem) {
+        this.luotXem = luotXem;
+    }
+
+    public UserEntity getUser() {
+        return user;
+    }
+
+    public void setUser(UserEntity user) {
+        this.user = user;
     }
 }

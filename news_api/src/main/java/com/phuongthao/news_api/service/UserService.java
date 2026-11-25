@@ -32,6 +32,16 @@ public class  UserService {
         UserEntity existingUser = userRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("User not found"));
 
+        if(!existingUser.getEmail().equalsIgnoreCase(user.getEmail())
+                && userRepository.existsByEmail(user.getEmail())){
+            throw new RuntimeException("Email already exists");
+        }
+
+        if(!existingUser.getSdt().equalsIgnoreCase(user.getSdt())
+            && userRepository.existsBySdt(user.getSdt())){
+            throw new RuntimeException("Phone already exists");
+        }
+
         existingUser.setName(user.getName());
         existingUser.setGioiTinh(user.getGioiTinh());
         existingUser.setSdt(user.getSdt());
